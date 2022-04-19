@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>国内疫情数据显示</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="js/flexible.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/echarts.js"></script>
+    <script src="js/china.js"></script>
+    <script src="js/getSinaData.js"></script>
+    <script src="js/getTecentData.js"></script>
+</head>
+<body>
+    <div class="main">
+        <!-- 头部标题 -->
+        <header>
+            <ul>
+                <li><a href="#" class="active">国内疫情</a></li>
+                <li><a href="#">国外疫情</a></li>
+            </ul>
+        </header>
+        <!-- 疫情数据概述 -->
+        <div class="summarize">
+            <h3>国内疫情</h3>
+            <p class="time">数据更新至 <span>2021.01.17 12:26</span></p>
+            <ul class="info"></ul>
+        </div>
+        <!-- 中国疫情地图 -->
+        <div class="china_map">
+            <nav>
+                <a href="javascript:;" class="active">现有确诊</a>
+                <a href="javascript:;">累计确诊</a>
+            </nav>
+            <div class="title">现有确诊病例数，排除治愈、死亡</div>
+            <div class="content"></div>
+        </div>
+        <!-- 疫情趋势 -->
+        <div class="trend">
+            <h3>全国 总新增确诊/新增境外输入确诊 趋势</h3>
+            <div class="content"></div>
+        </div>
+        <!-- 疫情确诊数据 -->
+        <div class="confirmed">
+            <h3>新增确诊分布</h3>
+            <div class="content"></div>
+        </div>
+    </div>
+</body>
+</html>
